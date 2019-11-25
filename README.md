@@ -18,3 +18,6 @@ Different versions might have different paths.
 
 ## Building
 Currently, there are only two projects you can build. You can build Sandbox by running the build.bat inside the Sandbox directory, or you can build the Physics Engine Test project by running the build.bat inside that directory. To run the application, simply run run.bat.
+
+# Dependencies
+While the core physics engine itself has no dependencies, the sandbox depends on SDL2 and the Physics Engine Test depends on gtest.
