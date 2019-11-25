@@ -66,9 +66,12 @@ VECTOR_DEFINITIONS(, int n)
 
 #define n 4
 VECTOR_DEFINITIONS()
+#undef n
 
 #define n 3
 VECTOR_DEFINITIONS()
+#undef n
 
 #define n 2
 VECTOR_DEFINITIONS()
+#undef n

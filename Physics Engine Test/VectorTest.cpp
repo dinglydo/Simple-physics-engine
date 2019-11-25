@@ -23,6 +23,27 @@ TEST(VectorAdd, VectorOperatorAdd)
 }
 
 /*
+=============== VECTOR SUBTRACT ===============
+*/
+
+
+TEST(VectorSubtract, VectorSimpleSubtract)
+{
+	Physics::Vec2D vec = {2, 2};
+	Physics::Vec2D vec2 = {1, 2};
+	Physics::Vec2D result = vec.Subtract(vec2);
+	EXPECT_TRUE(result.x == 1 && result.y == 0);
+}
+
+TEST(VectorSubtract, VectorOperatorSubtract)
+{
+	Physics::Vec2D vec = {2, 2};
+	Physics::Vec2D vec2 = {1, 2};
+	Physics::Vec2D result = vec - vec2;
+	EXPECT_TRUE(result.x == 1 && result.y == 0);
+}
+
+/*
 =============== VECTOR TYPEDEFS ===============
 */
 

@@ -41,6 +41,14 @@ template<typename T __VA_ARGS__> Physics::Vector<T, n> Physics::Vector<T, n>::Ad
 	return result;																																\
 }																																				\
 																																				\
+template<typename T __VA_ARGS__> Physics::Vector<T, n> Physics::Vector<T, n>::Subtract(Physics::Vector<T, n> other) const						\
+{																																				\
+	Vector<T, n> result = {};																													\
+	for (int x = 0; x < n; ++x)																													\
+		result[x] = data[x] - other[x];																											\
+	return result;																																\
+}																																				\
+																																				\
 template<typename T __VA_ARGS__> T& Physics::Vector<T, n>::GetValue(int index)																	\
 {																																				\
 	return data[index];																															\
@@ -54,6 +62,11 @@ template<typename T __VA_ARGS__> T Physics::Vector<T, n>::GetValue(int index) co
 template<typename T __VA_ARGS__> Physics::Vector<T, n> Physics::Vector<T, n>::operator+(Physics::Vector<T, n> other) const						\
 {																																				\
 	return Add(other);																															\
+}																																				\
+																																				\
+template<typename T __VA_ARGS__> Physics::Vector<T, n> Physics::Vector<T, n>::operator-(Physics::Vector<T, n> other) const						\
+{																																				\
+	return Subtract(other);																														\
 }																																				\
 																																				\
 template<typename T __VA_ARGS__> T& Physics::Vector<T, n>::operator[](int index)																\
