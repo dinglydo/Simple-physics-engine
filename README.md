@@ -1,6 +1,6 @@
 # Simple-physics-engine
 It's a very simple physics engine. Very early. Work in progress.
-
+EDIT: Massive change. I've decided that I'll write this engine in C instead of C++, once I do continue writing it anyway.
 
 # How do I build this?
 First, as of now, this project only supports the MSVC compiler. This is simply due to my personal preference towards batch files. Fortunately, however, most C++ Windows developers have Visual Studio, which means they have MSVC.
